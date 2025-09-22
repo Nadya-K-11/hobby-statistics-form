@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Статистика</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+  <h2>Въведи данни</h2>
+  <form action="insert.php" method="POST">
+    <label>Име: <input type="text" name="name" required></label><br><br>
+    <label>Години: <input type="number" name="age" required></label><br><br>
+    <p>Хобита:</p>
+    <label><input type="checkbox" name="hobbies[]" value="music"> Музика</label><br>
+    <label><input type="checkbox" name="hobbies[]" value="cinema"> Кино</label><br>
+    <label><input type="checkbox" name="hobbies[]" value="sports"> Спорт</label><br><br>
+    <button type="submit">Запази</button>
+  </form>
+</body>
+</html>
